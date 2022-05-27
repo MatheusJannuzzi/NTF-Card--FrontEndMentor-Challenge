@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ntf-card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.25rem;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(5, 5, 5, 0.20);
+    margin-bottom: 2rem;
+}
+
+.ntf-card .image {
+    position: relative;   
+}
+
+.ntf-card .image div {
+    position: absolute;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 50%);
+    width: 100%;
+    height: calc(100% - 5px);
+    z-index: 999;
+    opacity: 0;
+}
+
+.ntf-card .image div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ntf-card .image div img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ntf-card h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ntf-card p {
+    color: hsl(215, 51%, 70%)
+}
+
+.ntf-card h2:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.ntf-card ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    border-bottom: 1.5px solid hsl(215, 51%, 70%);  /* linha */
+}
+
+.ntf-card ul li {
+    display: flex;
+    align-items: center;
+}
+
+.ntf-card ul li:first-child {
+    color: hsl(178, 100%, 50%);
+}
+
+.ntf-card .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 2rem;
+}
+
+.ntf-card .avatar img {
+    width: 2rem;
+    margin-right: 1.5rem;
+}
+
+.ntf-card .avatar p span {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+
+.ntf-card .avatar p span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+
+
+
+
+.attribution { 
+    font-size: 14px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* Responsividade*/
+@media (min-width: 500px) {
+    .ntf-card {
+        width: 375px;
+    }
+}
